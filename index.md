@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+**------************--------------**
+**API used in Springboot start up **
+**--------*****************-------**
+-org.springframework.boot.SpringApplicationRunListener
+	--Listener for the SpringApplication run method. 
+		SpringApplicationRunListeners are loaded via the SpringFactoriesLoader and should declare a public constructor 
+		that accepts a SpringApplication instance and a String[] of arguments. 
+		A new SpringApplicationRunListener instance will be created for each run.
 
-You can use the [editor on GitHub](https://github.com/abdussamad007/springbootdoc/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/abdussamad007/springbootdoc/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+-org.springframework.web.context.support.StandardServletEnvironment		
+	--Environment implementation to be used by Servlet-based web applications. 
+		All web-related (servlet-based) ApplicationContext classes initialize an instance by default.
+-org.springframework.core.env.StandardEnvironment
+	--Environment implementation suitable for use in 'standard' (i.e. non-web) applications.
+-org.springframework.boot.ConfigurableApplicationContext
+	--Provides facilities to configure an application context in addition to the application context client 
+		methods in the ApplicationContext interface.
+-org.springframework.bootSpringApplication	
+	--Classes that can be used to bootstrap and launch a Spring application from a Java main method. 
+-org.springframework.boot.context.embedded.EmbeddedWebApplicationContext
+	--This context will create, initialize and run an EmbeddedServletContainer by searching for a single 
+	  EmbeddedServletContainerFactory bean within the ApplicationContext itself. 
+	  The EmbeddedServletContainerFactory is free to use standard Spring concepts 
+	  (such as dependency injection, lifecycle callbacks and property placeholder variables).
+-org.springframework.boot.context.event.ApplicationFailedEvent
+	--Event published by a SpringApplication when it fails to start.
